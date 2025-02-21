@@ -63,7 +63,7 @@ gsap.to(".liste-projet", {
     x: "-200%"
 });
 
-// Animation des cartes services
+
 gsap.from(".card1, .card2, .card3", {
     scrollTrigger: {
         trigger: ".s3div1",
@@ -72,16 +72,16 @@ gsap.from(".card1, .card2, .card3", {
         scrub: 1,
         markers: true
     },
-    x: "33%",  // Toutes les cartes commencent au centre
+    x: "33%",  
     opacity: 0.3,
     scale: 0.8,
     stagger: {
-        each: 0.2,  // Léger décalage entre chaque carte
+        each: 0.2,  
         from: "center"
     }
 });
 
-// Créer un Draggable pour chaque time slot
+
 Draggable.create(".heure", {
     type: "x,y",
     bounds: "#section4",
