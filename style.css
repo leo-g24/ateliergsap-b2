@@ -270,15 +270,15 @@ h1 span {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    transform: translateX(-100vw);
     transition: all 0.3s ease;
 }
 
 .menu-container {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 400px;
     height: 100%;
     background: #080808;
@@ -501,8 +501,7 @@ h1 span {
     min-height: 600px;
 }
 
-.divcontact input,
-.divcontact textarea {
+.divcontact input, textarea {
     width: 100%;
     padding: 16px;
     border: 1px solid #eaeaea;
@@ -511,8 +510,8 @@ h1 span {
     transition: all 0.3s ease;
 }
 
-.divcontact input:focus,
-.divcontact textarea:focus {
+
+.divcontact  {
     border-color: #0066FF;
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
@@ -520,7 +519,6 @@ h1 span {
 
 .divcontact textarea {
     min-height: 150px;
-    resize: vertical;
 }
 
 .divcontact p {

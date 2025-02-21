@@ -41,13 +41,13 @@ gsap.to(".cursor",{
     }
 })
 
-// let timelineWindow4 = gsap.timeline();
+let timelineWindow4 = gsap.timeline();
 
-// timelineWindow4.to("#section2",{x:100})
-// .to("#section2",{y:100})
-// .to("#section2",{x:-100})
-// .to("#section2",{y:-100})
-// .to("#section2",{x:0})
+timelineWindow4.to("#section2",{x:100})
+.to("#section2",{y:100})
+.to("#section2",{x:-100})
+.to("#section2",{y:-100})
+.to("#section2",{x:0})
 
 
 
@@ -97,10 +97,42 @@ Draggable.create(".heure", {
             console.log("Se dépose");
             document.querySelector(".calendrier").classList.add("boxvalidate");
         } else {
+            gsap.to(".heure",{
+                x:0,
+                y:0,
+            });
             console.log("sors de la zone de dépot");
-            document.querySelector(".calendrier").classList.remove("boxvalidate");
         }
     },
     inertia: true,
     cursor: "wait"
 });
+
+
+// Apparition
+
+// let menuActive = false;
+
+// function menuAction(){
+//    console.log('click');
+//    if (menuActive == false) {
+//        gsap.to(".burger", {
+//            x: '0px',
+//            opacity: 1,
+//            duration: 2,
+//        });
+//        menuActive = true;
+//        console.log('Menu Ouvert')
+
+//    } else {
+//        gsap.to(".burger", {
+//            x: '-100vw',
+//            opacity:0 ,
+//            duration: 2,
+//        });
+//        menuActive = false;
+//        console.log('Menu Fermé')
+      
+//    }
+//};
+
