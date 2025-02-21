@@ -93,6 +93,13 @@ Draggable.create(".heure", {
     },
     onDragEnd: function() {
         console.log("dépose");
+        if(this.hitTest(".calendrier", "20%")) {
+            console.log("Se dépose");
+            document.querySelector(".calendrier").classList.add("boxvalidate");
+        } else {
+            console.log("sors de la zone de dépot");
+            document.querySelector(".calendrier").classList.remove("boxvalidate");
+        }
     },
     inertia: true,
     cursor: "wait"
