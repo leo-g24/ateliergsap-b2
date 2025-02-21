@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <div class="language">
+                <button class="active">FR</button>
+                <button>EN</button>
+            </div>  
+            <div class="burger">
+                <img src="assets/burger.svg" alt="menu">
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-overlay">
+        <div class="menu-container">
+            <div class="menu-header">
+                <div class="close-btn">
+                    <img src="assets/close.svg" alt="fermer">
+                </div>
+            </div>
+            <nav class="menu-content">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Informations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="section1">
+        <div class="bulle">Salut, c'est <span>Léo</span></div>
+        <div class="photo"></div>
+        <h1>WebDesigner, Innovations et <span class="gradient">Créativités</span></h1>
+        <div class="rond">
+            <button class="contact">Contactes</button>
+            <img class="cursor" src="assets/cursor.svg" alt="">
+            <div class="rs"></div>
+            <div class="rs"></div>
+            <div class="rs"></div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="s2div1">
+            <h2>Et si nos idées n'avaient plus de <span>limites ?</span></h2>
+            <p>Ensemble, transformons vos idées en expériences digitales uniques. Des designs qui captivent, des interfaces qui engagent.</p>
+            <div class="liste">
+                <div class="skill">
+                    <div class="bar"></div>
+                    <p>WEB DESIGN</p>
+                </div>
+                <div class="skill">
+                    <div class="bar"></div>
+                    <p>UI & UX</p>
+                </div>
+                <div class="skill">
+                    <div class="bar"></div>
+                    <p>BRANDING</p>
+                </div>
+            </div>
+        </div>
+        <div class="divprojet">
+            <div class="liste-projet">
+                <div class="projet"></div>
+                <div class="projet"></div>
+                <div class="projet"></div>
+                <div class="projet"></div>
+                <div class="projet"></div>
+                <div class="projet"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="services">Mes services</h2>
+        <div class="s3div1">
+            <div class="card1">
+                <img src="assets/webdesign.svg" class="imgcard1" alt="">
+                <div class="contentcard1">
+                    <h3>WebDesign</h3>
+                    <p>Création de sites web modernes et performants, optimisés pour les moteurs de recherche et les appareils mobiles.</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="assets/keyboard.svg" class="imgcard2" alt="">
+                <h3>Développement</h3>
+                <p>Développement de sites web performants et optimisés pour les moteurs de recherche et les appareils mobiles.</p>
+            </div>
+            <div class="card3">
+                <img src="assets/graphisme.svg" class="imgcard3" alt="">
+                <h3>Graphisme</h3>
+                <p>Graphisme pour des supports de communication visuels, tels que des affiches, des cartes de visite et des logos.</p>
+            </div>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="s4div1">
+            <h2>On en parle ?</h2>
+            <div class="divheure">
+                <button class="heure">8:00</button>
+                <button class="heure">9:00</button>
+                <button class="heure">10:00</button>
+                <button class="heure">11:00</button>
+                <button class="heure">12:00</button>
+                <button class="heure">13:00</button>
+                <button class="heure">14:00</button>
+                <button class="heure">14:00</button>
+            </div>
+            <div class="calendrier">
+                <!-- Le calendrier sera ajouté plus tard -->
+            </div>
+            <button class="btnrdv">Réserver</button>
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="s5div1">
+            <h2>Je serais ravis de vous aider</h2>
+        </div>
+        <div class="s5div2">
+            <div class="divcontact">
+                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="vous@entreprise.com">
+                <input type="tel" placeholder="+33 6 00 00 00 00">
+                <textarea placeholder="Laissez-nous un message..."></textarea>
+                <button class="btncontact">Envoyer le message</button>
+            </div>
+            <div class="imgcontact">
+                <!-- L'image 3D sera ajoutée ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript and GSAP --------------------------------- -->
+    <!-- GSAP -->
+    <script src="js/gsap.min.js"></script>
+    <!-- GSAP Module -->
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/MotionPathPlugin.min.js"></script>
+    <script src="js/Draggable.min.js"></script>
+
+    <script src="js/main.js"></script>
+    
+    <footer class="footer">
+        <div class="divfooter">
+            <div class="logofooter">
+                <h3>Léo</h3>
+                <p>WebDesigner, Innovations et Créativités</p>
+            </div>
+            
+            <nav class="navfooter">
+                <div class="colfooter">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#section1">Accueil</a></li>
+                        <li><a href="#section2">Projets</a></li>
+                        <li><a href="#section3">À propos</a></li>
+                        <li><a href="#section4">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="colfooter">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>contact@leo.fr</li>
+                        <li>+33 6 00 00 00 00</li>
+                        <li>Paris, France</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="bottomfooter">
+            <p>© 2024 Léo. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
